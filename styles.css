@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+.container {
+    display: flex;
+    width: 600px;
+    justify-content: center;
+    border-radius: 20px;
+    box-shadow: 1px 0px 20px 2px rgb(0, 0, 0, 0.3);
+}
+
+.left {
+    color: #fff;
+    padding: 20px;
+    width: 40%;
+    border-radius: 20px;
+    text-align: center;
+    background: linear-gradient(hsl(252, 100%, 67%),hsl(241, 81%, 54%));
+}
+
+.right {
+    width: 50%;
+    padding: 20px;
+}
+
+.left h4 {
+    text-align: center;
+}
+
+
+.score-left {
+    padding: 50px;
+    width: 74px;
+    height: 74px;
+    border-radius: 100%;
+    box-shadow: inset 1px 1px 12px 0px hsla(256, 72%, 46%, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.big-score { 
+    color: #fff;
+    font-weight: bold;
+    font-size: 60px;
+}
+
+.score-icon {
+    display: flex;
+}
+
+.score-reaction {
+    display: flex;
+    justify-content: space-between;
+    background-color: hsl(0, 100%, 67%, 0.1);
+    color: hsl(0, 100%, 67%);
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+
+.score-icon img {
+    margin-right: 5px;
+}
+
+
+.grey {
+    color: rgba(87, 87, 87,  0.992);
+}
+
+.black {
+    color: #222;
+    font-weight: bold;
+}
+
+.score-memory {
+    display: flex;
+    justify-content: space-between;
+    background-color: hsl(39, 100%, 56%, 0.1);
+    color:  hsl(39, 100%, 56%);
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.score-verbal {
+    display: flex;
+    justify-content: space-between;
+    background-color: hsl(166, 100%, 37%, 0.1);
+    color:  hsl(166, 100%, 37%);
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.score-visual {
+    display: flex;
+    justify-content: space-between;
+    background-color: hsl(234, 85%, 45%, 0.1);
+    color:  hsl(234, 85%, 45%);
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.submit {
+    width: 200px;
+    padding: 15px 30px;
+    border: none;
+    background: linear-gradient(hsl(252, 100%, 67%),hsl(241, 81%, 54%));
+    color: #fff;
+    border-radius: 50px;
+    outline: none;
+    width: 100%;
+    margin-top: 25px;
+}
+
+@media (max-width: 760px) {
+
+
+    .left {
+        width: 100%;
+        padding: 0;
+        border-radius: 0px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+
+    .right {
+        padding: 0;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .left-text {
+        padding: 20px;
+        text-align: center;
+    }
+
+
+    .container {
+        width: 100%;
+        flex-direction: column;
+        border-radius: 0px;
+        overflow: hidden;
+        padding: 0;
+    }
+
+
+}
